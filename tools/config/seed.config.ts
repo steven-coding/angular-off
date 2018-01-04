@@ -494,6 +494,8 @@ export class SeedConfig {
       '@angular/platform-browser-dynamic':
         'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/router': 'node_modules/@angular/router/bundles/router.umd.js',
+      '@angular/service-worker':
+        'node_modules/@angular/service-worker/bundles/service-worker.umd.js',
       '@angular/animations/browser':
         'node_modules/@angular/animations/bundles/animations-browser.umd.js',
       'tslib': 'node_modules/tslib/tslib.js',
@@ -512,7 +514,7 @@ export class SeedConfig {
         'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic-testing.umd.js',
       '@angular/router/testing':
         'node_modules/@angular/router/bundles/router-testing.umd.js',
-      'rxjs/operators': 'node_modules/rxjs/operators/index.js',
+      'rxjs/': 'node_modules/rxjs/',
 
       'app/': `${this.APP_BASE}app/`,
       // For test config
@@ -520,9 +522,13 @@ export class SeedConfig {
       '': 'node_modules/',
     },
     packages: {
+      defaultExtension: 'js',
       [this.BOOTSTRAP_DIR]: {
         defaultExtension: 'js'
-      }
+      },
+      rxjs: {
+        defaultExtension: 'js'
+      },
     }
   };
 
