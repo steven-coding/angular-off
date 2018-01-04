@@ -1,10 +1,10 @@
 {
-  "name": "angular-seed",
+  "name": "angular-off (angular-seed fork)",
   "version": "1.0.0",
   "description": "Modular starter project for Angular 2 (and beyond) with statically typed build and AoT compilation",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mgechev/angular-seed"
+    "url": "https://github.com/steven-coding/angular-off"
   },
   "scripts": {
     "build.tools": "tsc && gulp build.tools --color",
