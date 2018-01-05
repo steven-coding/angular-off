@@ -13,13 +13,13 @@ import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
-    BrowserModule, 
-    HttpClientModule, 
-    AppRoutingModule, 
-    AboutModule, 
-    HomeModule, 
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    AboutModule,
+    HomeModule,
     SharedModule.forRoot(),
-    ServiceWorkerModule.register('/ngsw-worker.js', {
+    ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: true
     })],
   declarations: [AppComponent],
