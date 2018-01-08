@@ -21,7 +21,8 @@ import { SharedModule } from './shared/shared.module';
     SharedModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: true
-    })],
+    })
+  ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 

@@ -71,7 +71,9 @@ function transformPath() {
       Config.APP_BASE + path.slice(slice_after, path.length).join(sep);
     const queryString = Config.QUERY_STRING_GENERATOR();
     if (queryString) {
-      arguments[0] += `?${queryString}`;
+      //arguments[0] += `?${queryString}`;
+      //2018-01-08 STH: inject without queryString - otherwise appCache won't work offline
+      arguments[0] += '';
     }
     return slash(
       plugins.inject.transform.apply(plugins.inject.transform, arguments)

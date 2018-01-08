@@ -515,6 +515,7 @@ export class SeedConfig {
       '@angular/router/testing':
         'node_modules/@angular/router/bundles/router-testing.umd.js',
       'rxjs/': 'node_modules/rxjs/',
+      'pouchdb': 'node_modules/pouchdb/dist/pouchdb.min.js',
 
       'app/': `${this.APP_BASE}app/`,
       // For test config
@@ -567,6 +568,7 @@ export class SeedConfig {
         'node_modules/@angular/common/bundles/common-http.umd.js',
       'tslib': 'node_modules/tslib/tslib.js',
       'rxjs/operators': 'node_modules/rxjs/operators/index.js',
+      'pouchdb': 'node_modules/pouchdb/dist/pouchdb.min.js',
       'dist/tmp/node_modules/*': 'dist/tmp/node_modules/*',
       'node_modules/*': 'node_modules/*',
       '*': 'node_modules/*'
