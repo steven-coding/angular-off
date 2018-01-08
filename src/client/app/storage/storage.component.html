@@ -1,0 +1,14 @@
+<p>This module demonstrates offline storage with pouchdb</p>
+
+<div>
+  <form (submit)="save()">
+    <input [(ngModel)]="newNotice" name="notice" placeholder="Notice">
+    <button type="submit">Save</button>
+    <button (click)="clearStorage()" type="button">Clear Storage</button>
+  </form>
+</div>
+
+<h3>Notices</h3>
+<ul>
+  <li *ngFor="let notice of notices">{{notice.date |date: 'dd.MM.yyyy HH:mm:ss'}}: {{notice.text}}</li>
+</ul>

@@ -1,0 +1,16 @@
+<h2>Selective Upload</h2>
+
+<h3>1. Add files to be uploaded later on</h3>
+<input id="file-upload" type="file" multiple><button (click)="addFile()">add</button>
+
+<h3>2. Check list of files to be uploaded</h3>
+<ul>
+  <li *ngFor="let file of filesToBeUploaded">{{file}}</li>
+</ul>
+
+<h3>3. Select source files, which contain all files to be uploaded and click "upload"</h3>
+<input id="source-files" type="file" multiple><button (click)="upload()">upload</button>
+
+
+<h3>Uploaded files</h3>
+<div id="upload-output"></div>

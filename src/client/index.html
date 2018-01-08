@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" manifest="appcache.manifest">
+<html lang="en"
+<% if (BUILD_TYPE != 'dev') { %>
+      manifest="appcache.manifest"
+<% } %>
+>
 <head>
   <base href="<%= APP_BASE %>">
   <meta charset="utf-8">
